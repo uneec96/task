@@ -11,5 +11,6 @@ resource "aws_instance" "Task" {
 
 resource "aws_ebs_volume" "example" {
   availability_zone = "ap-south-1a"
+  count = 3
   size              = 8
 }
